@@ -1,0 +1,55 @@
+.toolbar {
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.toolbar button {
+    margin: 0;
+    background: green;
+}
+
+.toolbarButton {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    padding: 5px 5px;
+}
+
+.editorBtnImg {
+    width: 20px;
+    height: 20px;
+}
+
+.toolbarButton:hover {
+    background-color: #e0e0e0;
+}
+
+.toolbarButton:focus {
+    outline: none;
+}
+
+.toolbarGroup {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.isActive {
+    background-color: #0056b3 !important;
+    color: white;
+    border-color: #0056b3;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.isActive strong,
+.isActive em {
+    font-weight: bold;
+    color: white;
+}

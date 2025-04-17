@@ -1,0 +1,335 @@
+.mainAdminContainer {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.adminNavContainer {
+  width: 259px;
+  background: #cccef1;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  direction: rtl;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  overflow-y: auto;
+  padding: 10px 0 10px 0;
+  z-index: 1001;
+
+}
+
+.mainAdmin {
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  height: 100%;
+  flex-grow: 1;
+  width: calc(100vw - 220px);
+}
+
+.translateBtn {
+  border: 1px solid silver !important;
+  background-color: #0070f3 !important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.translateBtn:hover {
+  background: #0053b3 !important;
+}
+
+.enInput {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.enInput input {
+  width: calc(100% - 50px) !important;
+}
+
+.newRouteModal,
+.deleteRouteModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: ltr;
+}
+
+.routeModalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+}
+
+.deleteRouteContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+}
+
+.deleteRouteModalActions {
+  display: flex;
+  gap: 25px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.deleteRouteContent input {
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.routeModalContent h2,
+.deleteRouteContent h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+}
+
+.routeModalContent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.routeModalContent form div {
+  margin-bottom: 10px;
+}
+
+.routeModalContent form label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.routeModalContent form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.routeModalContent form button,
+.deleteRouteContent button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.routeModalContent form button[type='button'] {
+  background-color: #ccc;
+}
+
+.routeModalContent form button:hover,
+.deleteRouteContent button:hover {
+  opacity: 0.9;
+}
+
+.adminModalError {
+  color: red;
+  margin-top: 10px;
+}
+
+.deleteRouteContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.deleteRouteContent button {
+  width: 50%;
+}
+
+.deleteRouteContent button[type='button'] {
+  background-color: red;
+}
+
+.deleteRouteContent h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.deleteRouteContent p {
+  font-size: 1.3rem;
+}
+
+.redText {
+  color: red;
+}
+
+.adminRoutesBtnsUpAndDown {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.adminRoutesBtnsUpAndDown button {
+  font-size: 1.5rem;
+  width: 30px;
+  padding-bottom: 5px;
+  border-radius: 7px;
+  border: none;
+  background: #4498f9;
+  color: black;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.adminRoutesBtnsUpAndDown button:disabled,
+.adminRoutesBtnsUpAndDown button:disabled:hover,
+.adminRoutesInfo>button:disabled,
+.adminRoutesInfo>button:disabled:hover,
+.routeActions>button:disabled,
+.routeActions>button:disabled:hover {
+  background-color: #8396ac;
+  color: black;
+  cursor: default;
+}
+
+.routeActions {
+  margin-top: 1px;
+}
+
+.adminRoutesBtnsUpAndDown button:disabled:hover {
+  background-color: #8396ac;
+  cursor: default;
+}
+
+.adminNavRoute {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.adminNavRoute::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #0070f3;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.adminNavContainer>button {
+  width: 90%;
+  padding: 10px;
+  background: #4498f9;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.logoutBtn {
+  background-color: #4498f9;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  flex: 1 ;
+}
+
+.logoutBtn:hover {
+  background-color: #0070f3;
+  color: white;
+  cursor: pointer;
+}
+
+.navActions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  width: calc(100% - 20px);
+}
+
+.adminNavContainer>button:hover {
+  background: #0070f3;
+  color: white;
+}
+
+
+.adminRoutesBtnsUpAndDown button:hover {
+  background-color: #0070f3;
+  color: white;
+}
+
+.adminRoutesInfo {
+  direction: ltr;
+  width: 155px;
+  padding-bottom: 7px;
+}
+
+.adminRoutesBundle {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.adminRoutesInfo>button,
+.routeActions>button {
+  padding: 5px 10px;
+  background: #4498f9;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 7px;
+}
+
+.adminRoutesInfo>button:hover,
+.routeActions>button:hover {
+  background: #0070f3;
+  color: white;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.componentSelecotrContainer {
+  background: #4498f9;
+}
+
+.selectedRoute {
+  background: rgba(0, 255, 0, 0.317);
+  border-radius: 15px;
+  padding-bottom: 7px;
+}

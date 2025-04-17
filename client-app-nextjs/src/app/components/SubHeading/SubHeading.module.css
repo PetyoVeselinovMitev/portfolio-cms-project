@@ -1,0 +1,19 @@
+.subHeading {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.subHeading p {
+    min-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .subHeading {
+        font-size: 22px;
+    }
+
+    .subHeading p {
+        min-height: 22px;
+    }
+}

@@ -1,0 +1,181 @@
+.newContainer {
+    flex: 1;
+    border: 2px solid gray;
+    border-radius: 15px;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+
+.langSelect {
+    display: flex;
+    align-items: center;
+}
+
+.langSelect img {
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 40px;
+}
+
+.containerActions {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+.deleteBtn {
+    background: #e90000 !important;
+}
+
+.deleteBtn:hover {
+    background: #b40000 !important;
+}
+
+.containerActions button,
+.componentContainer button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    margin: 5px 15px 5px 15px;
+}
+
+.containerActions button:hover,
+.componentContainer button:hover {
+    background: #0065d0;
+    cursor: pointer;
+}
+
+.containerContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.status {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.left button:disabled {
+    background: #6c757d;
+    cursor: default;
+}
+
+.componentActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minusBtn {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+
+
+.langBtn {
+    margin: 0 !important;
+    padding: 0 15px !important;
+    height: 35px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.modalBackdrop h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.modalActions button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 45%;
+}
+
+.modalActions button:first-child {
+    background: #d9534f;
+    /* Red */
+    color: white;
+}
+
+.modalActions button:first-child:hover {
+    background: #c9302c;
+}
+
+.modalActions button:last-child {
+    background: #5bc0de;
+    /* Blue */
+    color: white;
+}
+
+.modalActions button:last-child:hover {
+    background: #31b0d5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.right button:disabled {
+    background: gray;
+}

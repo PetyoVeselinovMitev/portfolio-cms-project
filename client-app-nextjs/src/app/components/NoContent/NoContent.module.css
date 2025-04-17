@@ -1,0 +1,36 @@
+.noContent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.noContent h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.noContent p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .noContent {
+        text-align: center;
+        width: 100vw;
+        height: 50vh;
+    }
+    
+    .noContent h1 {
+        font-size: 2rem;
+    }
+
+    .noContent p {
+        font-size: 1.2rem;
+    }
+}

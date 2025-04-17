@@ -1,0 +1,34 @@
+.textBox {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.textBox ul li,
+.textBox ol li {
+    margin-bottom: 10px;
+}
+
+.textBox ul li:last-child,
+.textBox ol li:last-child {
+  margin-bottom: 0;
+}
+
+.textBox p {
+    min-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .textBox ul li p ,
+    .textBox ol li p {
+        text-align: center !important;
+    }
+
+    .textBox {
+        font-size: 16px;
+    }
+
+    .textBox p {
+        min-height: 16px;
+    }
+}

@@ -1,0 +1,47 @@
+.editorEn {
+    border: 2px solid gray;
+    border-radius: 5px 5px 0px 5px;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    width: 475px;
+    margin-top: 20px;
+}
+
+.editorBg {
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    width: 475px;
+    margin-top: 20px;
+}
+
+.ProseMirror ol li p{
+    max-width: 300px;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    position: relative;
+}
+
+.translateBtn {
+    position: absolute;
+    bottom: -36px;
+    right: 0;
+    border: 2px solid gray !important;
+    border-top: none !important ;
+    border-radius: 0px 0px 5px 5px !important;
+}
+
+.editor a {
+    color: #007bff;  
+    text-decoration: underline; 
+}
+
+.editor a:hover {
+    color: #0056b3;
+    cursor: pointer;
+}

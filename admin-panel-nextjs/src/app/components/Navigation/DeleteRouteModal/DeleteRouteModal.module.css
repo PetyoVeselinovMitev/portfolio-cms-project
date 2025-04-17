@@ -1,0 +1,89 @@
+.deleteRouteModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+}
+
+.deleteRouteContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.deleteRouteModalActions {
+    display: flex;
+    gap: 25px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.deleteRouteContent input {
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.deleteRouteContent h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.deleteRouteContent button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deleteRouteContent button:hover {
+    opacity: 0.9;
+}
+
+.adminModalError {
+    color: red;
+    margin-top: 10px;
+}
+
+.deleteRouteContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.deleteRouteContent button {
+    width: 50%;
+}
+
+.deleteRouteContent button[type='button'] {
+    background-color: red;
+}
+
+.deleteRouteContent h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.deleteRouteContent p {
+    font-size: 1.3rem;
+}
+
+.redText {
+    color: red;
+}

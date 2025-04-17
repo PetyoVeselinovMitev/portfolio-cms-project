@@ -1,0 +1,30 @@
+.headingComp {
+    margin: 15px;
+    flex: 1;
+}
+
+.headingComp img {
+    width: 500px;
+    height: auto;
+}
+
+.compSelectActions {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    gap: 20px;
+    align-items: center;
+}
+
+.compSelectActions>button {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.headingContainer{
+    display: flex;
+    gap: 30px;
+    margin: 0px 40px
+}

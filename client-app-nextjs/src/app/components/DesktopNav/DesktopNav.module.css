@@ -1,0 +1,46 @@
+.sideNav {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    text-align: center;
+    background: #f4f5ff;
+    height: calc(100vh - 20px);
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
+    position: fixed;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.logoContainer img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.copyright p {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    direction: ltr;
+    margin: 0px 20px;
+}
+
+.copyright {
+    margin-top: auto;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .sideNav {
+        display: none;
+    }
+}

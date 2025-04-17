@@ -1,0 +1,160 @@
+.componentContainer {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.componentContainer button {
+    margin-top: 25px;
+}
+
+.componentContainer button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    margin-left: 15px;
+}
+
+.componentContainer button:hover {
+    background: #0065d0;
+    cursor: pointer;
+}
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+}
+
+.modalContent {
+    background: white;
+    width: 90%;
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    padding: 0; /* Remove padding to avoid gaps */
+    display: flex;
+    flex-direction: column;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 10;
+    padding: 15px 20px; /* Adjust padding as needed */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for separation */
+}
+
+.modalBody {
+    flex-grow: 1;
+    padding: 20px; /* Restore padding inside the modal */
+}
+
+.modalBody img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 0px !important;
+}
+
+.contentInput {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.deleteModalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.deleteModalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.deleteModalBackdrop h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.deleteModalActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.deleteModalActions button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 45%;
+}
+
+.deleteModalActions button:first-child {
+    background: #d9534f; /* Red */
+    color: white;
+}
+
+.deleteModalActions button:first-child:hover {
+    background: #c9302c;
+}
+
+.deleteModalActions button:last-child {
+    background: #5bc0de; /* Blue */
+    color: white;
+}
+
+.deleteModalActions button:last-child:hover {
+    background: #31b0d5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,91 @@
+.container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container textarea {
+    font-size: 1.5rem;
+    max-width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container h2 {
+    margin-bottom: 10px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    align-items: center;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+}
+
+.statusBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button:disabled {
+    background: gray !important;
+}
+
+.deleteBtn {
+    background: #e90000 !important;
+}
+
+.deleteBtn:hover {
+    background: #b40000 !important;
+}
+
+.uploadingActions input {
+    display: none;
+}
+
+.uploadingActions label {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.uploadingActions label:hover {
+    background: #0056b3;
+}
+
+.uploadingActions button:disabled {
+    background: gray !important;
+}
+
+.uploadedImg img{
+    max-height: 300px;
+    max-width: 300px;
+    margin-top: 20px;
+    min-width: 200px;
+}
+

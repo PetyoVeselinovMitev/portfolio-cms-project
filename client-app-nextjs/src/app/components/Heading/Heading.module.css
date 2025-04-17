@@ -1,0 +1,19 @@
+.heading {
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+}
+
+.heading p {
+    min-height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    .heading p {
+        min-height: 28px;
+    }
+}

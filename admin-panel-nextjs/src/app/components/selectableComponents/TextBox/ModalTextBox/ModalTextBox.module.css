@@ -1,0 +1,26 @@
+.textBoxComp {
+    margin: 15px;
+    flex: 1;
+    padding: 0 170px 0 170px;
+}
+
+.compSelectActions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    width: 300px;
+}
+
+.compSelectActions>button {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.textBoxContainer{
+    display: flex;
+    gap: 30px;
+    margin: 0px 40px
+}
