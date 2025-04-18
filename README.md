@@ -12,9 +12,9 @@ A full-stack content management system and client-facing website built with **Ne
 - Framework: [Next.js](https://nextjs.org/)
 - Database: MySQL
 - Auth: JWT-based authentication
+- Security: 2FA
 - Styling: Custom CSS
 - Language support: English 🇬🇧 / Bulgarian 🇧🇬
-- Hosting: Self-hosted on custom subdomains
 
 ## 🛠️ Installation & Development
 
