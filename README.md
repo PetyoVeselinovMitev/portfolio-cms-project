@@ -2,21 +2,21 @@
 
 A full-stack content management system and client-facing website built with **Next.js** and **MySQL**. This monorepo includes:
 
-- 🛠️ **CMS App (Admin Panel)** – for creating and managing multilingual content
-- 🌐 **Client App (Public Website)** – dynamic and SEO-optimized, powered by the CMS
+- **CMS App (Admin Panel)** – for creating and managing multilingual content
+- **Client App (Public Website)** – dynamic and SEO-optimized, powered by the CMS
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - Framework: [Next.js](https://nextjs.org/)
 - Database: MySQL
 - Auth: JWT-based authentication
 - Security: 2FA
 - Styling: Custom CSS
-- Language support: English 🇬🇧 / Bulgarian 🇧🇬
+- Language support: English / Bulgarian
 
-## 🛠️ Installation & Development
+## Installation & Development
 
 1. Clone the repo:
    ```bash
